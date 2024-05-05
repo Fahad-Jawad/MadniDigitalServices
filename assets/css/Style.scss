@@ -1,0 +1,1053 @@
+$primary:#055fac;
+$secondary:#b12d35;
+
+body{
+    overflow-x: hidden;
+}
+a{
+    color: white ;
+    text-decoration: none !important;
+}
+.headingCaption {
+    color: $primary;
+    letter-spacing: 5px;
+}
+
+.primaryText{
+    color: $primary;
+}
+.secondaryText{
+    color: $secondary;
+}
+.navbar{
+    margin-top: 1% !important;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    background-color: transparent;
+
+    .logo{
+        width: 70%;
+    }
+    .navbar-nav{
+        width: 100%;
+    }
+    
+ .nav-item{
+    margin:0 3%;
+    font-size: 19px;
+    font-weight: 600;
+
+    position: relative;
+    .nav-link::before{
+        content: "";
+        width: 0%;
+        border-bottom: 3px solid $primary;
+        position: absolute;
+        bottom: 0;
+
+    }
+    &:hover{
+        .nav-link::before{
+            transition: 0.5s;
+            width: 100%;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+}
+    }
+}
+
+}
+.container-fluid{
+    padding: 0;
+}
+
+.header{
+    background:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.8)), url("../images/bckimg.jpg");
+    color: white ;
+    background-size: cover;
+    height: 100vh;
+    .leftSection{
+    padding: 8% 5% !important;
+} 
+img{
+    width: 101.6% !important;
+    height: 70%;
+}
+.col-lg-12{
+    padding: 0;
+}
+
+    h1{
+        font-size: 4rem;
+        margin-bottom: 3%;
+    }
+.headerBtns{
+    display: flex;
+    align-items: center;
+}
+    .serviceBtn{
+        padding: 1% 2%;
+        background:linear-gradient(45deg, #0E90D5, #3032A2) ;
+    font-weight: 600;
+
+        border: none;
+       
+        font-size: 1.2rem;
+        border-radius: 0.2rem;
+        -webkit-border-radius: 0.2rem;
+        -moz-border-radius: 0.2rem;
+        -ms-border-radius: 0.2rem;
+        -o-border-radius: 0.2rem;
+        margin-right: 2%;
+
+        a{
+            color: white ;
+        }
+
+        &:hover{
+            background: white;
+            
+            transition: 0.5s !important;
+            -webkit-transition: 0.5s !important;
+            -moz-transition: 0.5s !important;
+            -ms-transition: 0.5s !important;
+            -o-transition: 0.5s !important;
+            a{
+                color: $primary;
+                transition: 0.5s !important;
+            -webkit-transition: 0.5s !important;
+            -moz-transition: 0.5s !important;
+            -ms-transition: 0.5s !important;
+            -o-transition: 0.5s !important;
+            }
+}
+}
+.contactBtn{
+    padding: 1% 2%;
+    background-color: white;
+    color: $primary;
+    font-weight: 600;
+
+        border: 1px solid white;
+        font-size: 1.12rem;
+        border-radius: 0.2rem;
+        -webkit-border-radius: 0.2rem;
+        -moz-border-radius: 0.2rem;
+        -ms-border-radius: 0.2rem;
+        -o-border-radius: 0.2rem;
+
+        &:hover{
+            background-color: $secondary;
+            color: white;
+            border-color: transparent;
+            transition: 0.3s !important;
+            -webkit-transition: 0.3s !important;
+            -moz-transition: 0.3s !important;
+            -ms-transition: 0.3s !important;
+            -o-transition: 0.3s !important;
+        }
+
+}
+}
+
+.shortServices{
+    margin-top: -15% !important;
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 250px;
+        perspective: 1000px;
+}
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        
+        
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+}
+      
+      .flip-card-front {
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+
+        h3{
+            font-weight: 800 !important;
+            font-size: 1.6rem;
+            background-image: linear-gradient(to right, #0569c0,#0778da,$primary);
+            -webkit-background-clip: text; 
+             -webkit-text-fill-color: transparent;
+              
+          
+        }
+      }
+      
+      .flip-card-back {
+        background-color: $primary;
+        color: white;
+        transform: rotateY(180deg);
+      }
+}
+
+
+.aboutus{
+    margin: 10% 0;
+
+    .imgs{
+        position: relative;
+        padding: 0;
+        .aboutimg{
+            z-index: 2;
+            width: 80% !important;
+         float: right;
+        }
+
+        .backCircle{
+            position: absolute;
+            left: 5%;
+            bottom: 1px;
+            width: 60%;
+            z-index: -1;
+            
+            animation: hoverImg 3s infinite linear;
+            -webkit-animation: hoverImg 3s infinite linear;
+        }
+    }
+    .aboutRight{
+        p{
+            font-size: large;
+            line-height: 1.5;
+            color: rgb(137, 136, 136);
+        }
+        .primaryText{
+            color: $secondary;
+        }
+        .aboutExtra{
+            padding: 0;
+            h4{
+                font-weight: 700;
+            }
+       
+        svg{
+            font-size: 40px;
+            color: $primary;
+            margin-top: 20%;
+        }
+    }
+    .readMoreBtn{
+        padding: 2% 6%;
+        margin-top: 8%;
+        background-color: $secondary;
+        color: white;
+        font-size: large;
+    }
+    }
+}
+
+.services{
+    background:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.8)), url("../images/servicesbg.png");
+background-size: cover;
+background-attachment: fixed;
+padding:3% 8%;
+display: flex;
+justify-content: center;
+text-align: center;
+color: white;
+.flip-card {
+        margin-top: 10%;
+        background-color: transparent;
+        width: 100%;
+        height: 250px;
+        perspective: 1000px;
+
+      
+        
+
+}
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        border: 3px solid $primary;
+        
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+      
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+}
+      
+      .flip-card-front {
+        background-color: transparent;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+      }
+
+      
+      .flip-card-back {
+        background-color: $primary;
+        color: white;
+        transform: rotateY(180deg);
+      }
+}
+
+
+.footer{
+    background: linear-gradient(45deg, #0E90D5, #3032A2) !important;
+
+    color: white;
+    border-top-right-radius: 0.8rem;
+   border-top-left-radius: 0.8rem;
+   padding: 4%;
+
+}
+
+.testimonialsSection{
+    margin: 5% 0;
+    .sectionText{
+    text-align: center;
+    h1{
+        font-weight: 800;
+    }
+    h4{
+        letter-spacing: 5px;
+    }
+}
+
+    .testimonials{
+        margin-top: 5%;
+
+        .carousel-indicators{
+            .active{
+                width: 50px;
+                border-radius: 0.6rem;
+                -webkit-border-radius: 0.6rem;
+                -moz-border-radius: 0.6rem;
+                -ms-border-radius: 0.6rem;
+                -o-border-radius: 0.6rem;
+}
+            button{
+                background-color: $primary;
+                
+            }
+        }
+
+        .carousel-control-next,.carousel-control-prev{
+            display: none;
+        }
+        .review{
+            margin-bottom: 15%;
+            margin-top: 3%;
+       
+.card{
+    padding: 5%;
+    border: 0px;
+    box-shadow: 0 0 7px 0 rgb(0 0 0 / 10%);
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+}
+    .reviweInfo{
+        padding: 0;
+        margin-top: 8%;
+    .reviwerImg{
+        width: 95px;
+        height: 80px;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+}
+.reviwerText{
+    svg{
+        color: $primary;
+        font-size: 19px;
+    }
+    h6{
+        color: $secondary;
+        font-weight: 500;
+    }
+}
+    }
+}
+}
+
+}
+
+
+.locations{
+    background:linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.5)),url("../images/mapbg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 12% 15%;
+    padding-top: 3%;
+margin-bottom: -18%;
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+    
+  
+
+.sectionText{
+    color: white;
+    text-align: center;
+    margin-bottom: 15%;
+    .headingCaption{
+        font-weight: 700;
+    }
+
+}
+
+    .card{
+        width: 95%;
+        border-radius: 0.4rem;
+        border:3px solid $primary;
+        -webkit-border-radius: 0.4rem;
+        -moz-border-radius: 0.4rem;
+        -ms-border-radius: 0.4rem;
+        -o-border-radius: 0.4rem;
+        padding: 3%;
+        color: rgb(203, 203, 203);
+        text-align: center;
+        .city{
+            color: $secondary;
+            margin-bottom: 4%;
+        }
+
+        .location{
+            border-right: 1px solid gainsboro;
+        }
+
+        .sideInfo{
+            padding: 5%;
+        }
+        .locationInfo{
+            margin-top: 15%;
+           .labels{
+            margin-top: 15%;
+            color: $primary;
+            font-weight: 700;
+            svg{
+                margin-right: 5%;
+            }
+           }
+        }
+
+        iframe{
+            width: 100%;
+        }
+    }
+}
+
+
+
+.footer{
+    border-radius: 0;
+    padding-top: 3%;
+  h3{
+    margin-bottom: 5%;
+  }
+  .footerSection{
+    padding: 3%;
+    ul{ li{
+        margin-bottom: 5%;
+    a{
+        text-decoration: none;
+        color: white;
+       
+    }
+}
+}
+    .social{
+        display: flex;
+        cursor: pointer;
+        svg {
+            font-size: 2.5rem;
+            &+svg{margin-left: 3%;}
+
+            &:hover{
+                transition: 0.4s;
+                transform: scale(1.3);
+                -webkit-transform: scale(1.3);
+                -moz-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                -o-transform: scale(1.3);
+                -webkit-transition: 0.4s;
+                -moz-transition: 0.4s;
+                -ms-transition: 0.4s;
+                -o-transition: 0.4s;
+}
+        }
+    }
+  }
+    ul
+{
+    list-style: none;
+    padding: 0;
+    svg{
+        margin-right: 3%;
+        font-size: 1.2rem;
+    }
+}
+}
+.homeFooter{
+    padding-top: 10%;
+}
+
+@keyframes hoverImg{
+    0%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+25%{ transform: translateY(20px); -webkit-transform: translateY(20px); -moz-transform: translateY(20px); -ms-transform: translateY(20px); -o-transform: translateY(20px);
+}
+
+50%{
+transform: translateY(0px);
+-webkit-transform: translateY(0px);
+-moz-transform: translateY(0px);
+-ms-transform: translateY(0px);
+-o-transform: translateY(0px);
+}
+
+75%{ transform: translateY(-20px); -webkit-transform: translateY(-20px); -moz-transform: translateY(-20px); -ms-transform: translateY(-20px); -o-transform: translateY(-20px);
+}
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+    }
+
+
+
+
+    //About Us Page
+
+.breadcrumb{
+    background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.3)), url("../images/breadcumb.jpb.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+    .text{
+        color: white;
+    padding: 10% 6%;
+    h1{
+        margin-bottom: 5%;
+        font-size: 4rem;
+    }
+    h3{
+        word-spacing: 1rem;
+    }
+    }
+
+}
+
+
+.states{
+    margin: 5% 0;
+    padding: 4%;
+
+    .stateCard{
+        padding:10% 5%;
+        background: #F7F8FC;
+        position: relative;
+        border: none;
+        h1{
+            font-size: 3.2rem;
+            font-weight: 800;
+        }
+        svg{
+            font-size: 4rem;
+            margin: auto;
+            color: $primary;
+        }
+        p{
+            font-size:x-large;
+            color:#747b87;
+            font-weight:600;
+            margin-top: 6%;
+            letter-spacing: 2px;
+        }
+
+    
+
+        &::before{
+            content: "";
+    background: linear-gradient(45deg, #0E90D5, #3032A2) !important;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    opacity: 0.05;
+    transform: translate(10px, 10px);
+    padding: 5%;
+        }
+        &:hover{
+            &::before{
+                top:12px;
+                left: 6px;
+                opacity: 0.08;
+                transition: 0.4s;
+                -webkit-transition: 0.4s;
+                -moz-transition: 0.4s;
+                -ms-transition: 0.4s;
+                -o-transition: 0.4s;
+}
+        }
+    }
+}
+
+
+.team{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 3% 0;
+    padding-top: 6%;
+    z-index: 1;
+    margin-bottom: 30%;
+    .circle{
+        margin-bottom: 0%;
+    position: absolute;
+    width: 20%;
+    left: 0;
+    bottom: 20%;
+    animation: hoverImg 3s infinite linear;
+
+    
+        }
+    .meetText{
+        margin: auto;
+        width: fit-content;
+        .meet{
+            position: relative;
+           text-align: center;
+           font-size: x-large;
+           width: fit-content;
+           margin: auto;
+            &::before{
+                content: "";
+                width: 40px;
+                height: 2px;
+                position: absolute;
+                background-color: white;
+                top: 18px;
+                right: -50px;
+            }
+            
+            &::after{
+                content: "";
+                width: 40px;
+                height: 2px;
+                position: absolute;
+                background-color: white;
+                top: 18px;
+                left: -50px;
+    
+    
+            }
+        }
+        h1{
+            font-weight: 800;
+            font-size: 3rem;
+        }
+    }
+  .teamCards{
+    margin: auto;
+    padding: 15%;
+    margin-bottom: -35%;
+    position: relative;
+ 
+    .teamCard{
+        padding-bottom: 4%;
+        margin-bottom: 3%;
+        color: black;
+        border: none;
+        position: relative;
+        background: #f6f6f6;
+        overflow: hidden;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 0 12px 2px rgb(0 0 0 / 10%);
+        -khtml-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+        -o-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 12px 2px rgb(0 0 0 / 10%);
+
+        img
+{
+            width:100%;
+            height: 400px;
+            border-bottom-left-radius: 3rem;
+            margin-bottom: 3%;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            height: 70px;
+            width: 80px;
+            background: linear-gradient(-20deg, #0E90D5, #3032A2) !important;
+            bottom: -30px;
+            left: -50px;
+            transform: rotate(45deg);
+            transition: 500ms;
+            opacity: 0.6;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            background: linear-gradient(45deg, #0E90D5, #3032A2) !important;
+            height: 8%;
+            width: 12px;
+            bottom: 0;
+            right: 0;
+            transition: 500ms;
+            opacity: 0.6;
+        }
+
+        &:hover{
+            background: linear-gradient(45deg, #0E90D5, #3032A2) !important;
+            color: white;
+            &::before{
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            opacity: 0;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+}
+img{
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+&::after{
+    display: none;
+}
+
+        }
+    }
+  }
+}
+
+
+//Services Page
+.servicesSection{
+    
+
+    .headingCaption{
+        margin: 5% 0;
+       text-align: center !important;
+       font-weight: 700;
+    }
+
+   
+}
+.service{
+    margin: 20% 0;
+    p{
+        font-size: large;
+        svg{
+            margin-right: 2%;
+        }
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        
+    }
+    .serviceImg{
+        width: 70%;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        -moz-border-radius:25px;
+        -webkit-border-radius:25px;
+        border-radius:25px;
+}
+.leftImg{
+     
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    box-shadow: -15px 15px 5px #ccc;
+}
+.rightImg{
+
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    box-shadow: 15px 15px 5px #ccc;
+}
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+.serviceCard{
+   margin: 3% 0;
+    height: 100%;
+    padding: 5% 8%;
+    background: linear-gradient(45deg, #0E90D5, #3032A2) !important;
+
+    position: relative;
+    color: white;
+
+    .list{
+        padding: 0;
+    }
+
+    h2{
+        margin-bottom: 6%;
+    }
+    &::before{
+     content: "";
+     position: absolute;
+     width: 110%;
+     height: 100%;
+     top: 20%;
+     left: 30%;
+     border-radius:10rem ;
+     background-color: #f6f6f6;
+     opacity: 0.06;
+     -webkit-border-radius:10rem ;
+     -moz-border-radius:10rem ;
+     -ms-border-radius:10rem ;
+     -o-border-radius:10rem ;
+}
+}
+}
+
+
+
+@media screen and (min-width:300px) and (max-width:880px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    .navbar-brand{
+        width: 70%;
+    }
+    .header
+    { 
+        img{
+            display: none;
+        }
+        
+        .leftSection{
+        padding: 10% 5%!important;
+        padding-top: 4%;
+        h1{
+            font-size: 4rem;
+            margin-bottom: 15%;
+        }
+    }
+}
+.shortServices{
+    .flip-card{
+        width: 300px;
+        height: 250px;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+}
+ 
+.aboutus{
+    .imgs{
+        margin-bottom: 20%;
+    }
+}
+
+.testimonials{
+  
+    .review{
+       
+        .reviweInfo{
+            text-align: center;
+            img{
+                margin-bottom: 3%;
+            }
+        }
+    }
+}
+
+.locations{
+    padding: 12% 6%;
+    .card{
+        padding-bottom: 15% !important;
+    }
+    .location{
+        border-right:0px !important;
+        border-bottom: 1px solid gainsboro !important;
+
+        margin-bottom: 15%;
+        padding: 15% 0;
+
+       
+    }
+}
+
+.services{
+    padding: 8%;
+}
+
+.footerSection{
+    margin: 15% 0;
+}
+
+//About us page 
+
+.states{
+    .stateCard{
+        text-align: center;
+    }
+}
+.team{
+    .circle{
+        bottom: 2%;
+        width: 46%;
+    }
+    .meetText{
+        h1{
+            font-size: 2rem;
+        }
+    }
+    .teamCards{
+        .teamCard{
+        margin-bottom: 10%;
+        
+    }
+    }
+}
+
+
+//services page
+
+.allServices{
+    .service{
+        img{
+            margin: auto;
+            width: 90%;
+            margin-bottom: 10%;
+        }
+    }
+    .rightService{
+        flex-direction: column-reverse;
+    }
+}
+}
+
+@media screen and (min-width:870px) and (max-width:900px) {
+    .header
+    { 
+        img{
+            display: none;
+        }
+        
+        .leftSection{
+        padding: 10% 5%!important;
+        margin-top: 20% !important;
+        h1{
+            font-size: 4rem;
+            margin-bottom: 15%;
+        }
+    }
+}
+.shortServices{
+    .flip-card{
+        width: 300px;
+        height: 250px;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+}
+    
+}
